@@ -17,13 +17,13 @@ public class CheckHelpers {
     }
 
     public void checkPageHeader(String headerText) {
-        logger.logInfo("Проверка заголовка страницы");
+        logger.logInfo("   - Проверка заголовка страницы");
         String currentText = driver.findElement(By.xpath("//h1")).getText();
         assertEquals(headerText, currentText);
     }
 
     public void checkPrice(String expectedPrice) {
-        logger.logInfo("Проверка цены товара");
+        logger.logInfo("   - Проверка цены товара");
         String currentPrice = driver.findElement(By.cssSelector("span.price")).getText();
         Assert.assertEquals("Ошибка! Проверка значения цены не пройдена.", expectedPrice, currentPrice);
     }

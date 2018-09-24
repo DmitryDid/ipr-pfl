@@ -13,8 +13,8 @@ import yMarket.pages.UpperMenuPage;
 import java.util.concurrent.TimeUnit;
 
 public class Core {
-    private Logger logger;
     private WebDriver driver;
+    protected Logger logger;
     protected CheckHelpers checkHelpers;
     protected UpperMenuPage upperMenuPage;
     protected LeftMenuPage leftMenuPage;
