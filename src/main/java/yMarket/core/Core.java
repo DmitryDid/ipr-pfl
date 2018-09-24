@@ -28,6 +28,7 @@ public class Core {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         init();
+        logger.logInfo("Открываем стартовую страницу: https://market.yandex.ru");
         driver.get("https://market.yandex.ru/");
     }
 
