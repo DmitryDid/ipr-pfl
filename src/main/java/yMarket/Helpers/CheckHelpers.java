@@ -17,9 +17,9 @@ public class CheckHelpers {
     }
 
     public void checkPageHeader(String headerText) {
-        logger.logInfo("   - Проверка заголовка страницы");
+        logger.logInfo("   - Проверка текста заголовка страницы");
         String currentText = driver.findElement(By.xpath("//h1")).getText();
-        assertEquals(headerText, currentText);
+        Assert.assertEquals("Ошибка! Проверка текста заголовка не пройдена.", headerText, currentText);
     }
 
     public void checkPrice(String expectedPrice) {

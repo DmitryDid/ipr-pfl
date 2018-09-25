@@ -22,6 +22,6 @@ public class AsusTest extends Core {
         logger.logInfo("Выполнем проверку заголовка страницы и цены товара");
         checkHelpers.checkPageHeader("Ноутбук ASUS TUF Gaming FX504GD (Intel Core i7 8750H 2200 MHz/15.6\"/1920x1080/" +
                 "8GB/1128GB HDD+SSD/DVD нет/NVIDIA GeForce GTX 1050/Wi-Fi/Bluetooth/Windows 10 Home)");
-        checkHelpers.checkPrice("71 990 \u20BD");
+        checkHelpers.checkPrice("70 290 \u20BD");
     }
 }
