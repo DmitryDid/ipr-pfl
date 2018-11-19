@@ -10,12 +10,12 @@ public class FilterPage extends PagePrototype {
     }
 
     public void fillMaxPrice(By locator, String maxPrice) {
-        logger.logInfo("   - Ввод суммы фильтрации до: " + maxPrice);
+        logger.logInfo("Ввод суммы фильтрации до: " + maxPrice);
         fieldHelper.fieldFilling(locator, maxPrice);
     }
 
     public void fillMinPrice(By locator, String minPrice) {
-        logger.logInfo("   - Ввод суммы фильтрации от: " + minPrice);
+        logger.logInfo("Ввод суммы фильтрации от: " + minPrice);
         fieldHelper.fieldFilling(locator, minPrice);
 
     }

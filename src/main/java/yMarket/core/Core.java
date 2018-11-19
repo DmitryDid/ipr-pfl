@@ -13,8 +13,8 @@ import yMarket.pages.UpperMenuPage;
 import java.util.concurrent.TimeUnit;
 
 public class Core {
-    private Logger logger;
     private WebDriver driver;
+    protected Logger logger;
     protected CheckHelpers checkHelpers;
     protected UpperMenuPage upperMenuPage;
     protected LeftMenuPage leftMenuPage;
@@ -28,6 +28,7 @@ public class Core {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         init();
+        logger.logInfo("Открываем стартовую страницу: https://market.yandex.ru");
         driver.get("https://market.yandex.ru/");
     }
 
